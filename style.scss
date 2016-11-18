@@ -291,6 +291,9 @@ a {
 		.triangle {
 			display: block;
     		margin-top: 20px;
+    		border-left: 80px solid transparent;
+    		border-right: 80px solid transparent;
+    		border-bottom: 85px solid $primary;
 		}
 	}
 }

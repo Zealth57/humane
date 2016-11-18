@@ -1051,7 +1051,10 @@ a {
         transform: translateX(-50%); } }
     .hero .playButton .triangle {
       display: block;
-      margin-top: 20px; }
+      margin-top: 20px;
+      border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      border-bottom: 85px solid #a50031; }
 
 .intro {
   background: #a50031;

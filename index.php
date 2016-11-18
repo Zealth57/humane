@@ -18,7 +18,7 @@
 		</div>
 		<a href="https://www.youtube.com/watch?v=9y9oq1U-L9U" class="playButton">
 			<img src="images/play-button.png" alt="">
-			<img class="triangle" src="images/hero-play-arrow.png" alt="">
+			<div class="triangle"></div>
 		</a>
 	</div>
 	
