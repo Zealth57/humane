@@ -893,7 +893,8 @@ h6, .hero .hero__inner h2, .mainContent .mainContent__item a, .mainContent .main
   font-family: 'Amatic-Bold'; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 40px;
+  margin-bottom: 8px; }
 
 h2,
 h3,
@@ -922,7 +923,7 @@ h6 {
 
 /* close commented backslash hack */
 .container {
-  max-width: 1150px;
+  max-width: 1030px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto; }
@@ -955,7 +956,7 @@ a {
 .hero {
   background: url("images/bg-hero.jpg");
   background-size: cover;
-  background-position: bottom center; }
+  background-position: center; }
   @media screen and (max-width: 770px) {
     .hero {
       background-position: 60% center; } }
@@ -999,7 +1000,8 @@ a {
       font-size: 31px;
       color: white;
       margin: 36px;
-      display: block; }
+      display: block;
+      line-height: 1.5; }
       @media screen and (max-width: 550px) {
         .hero .hero__inner .hero__motto {
           font-size: 25px; } }
@@ -1017,7 +1019,7 @@ a {
           display: block;
           background: #dcdad3;
           color: #009fd0;
-          padding: 15px 20px;
+          padding: 15px 20px 12px;
           text-transform: uppercase;
           border-radius: 10px;
           font-size: 22px; }
@@ -1028,6 +1030,17 @@ a {
             .hero .hero__inner ul li a {
               text-align: center;
               width: 100%; } }
+    .hero .hero__inner .giveButton {
+      display: inline-block;
+      background: #a50031;
+      color: white;
+      padding: 12px 25px 9px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      font-size: 22px;
+      margin-left: 36px; }
+      .hero .hero__inner .giveButton:hover {
+        background: #009fd0; }
   .hero .playButton {
     position: absolute;
     bottom: 0;
@@ -1037,9 +1050,6 @@ a {
         left: 50%;
         transform: translateX(-50%); } }
     .hero .playButton .triangle {
-      border-left: 80px solid transparent;
-      border-right: 80px solid transparent;
-      border-bottom: 40px solid #a50031;
       display: block;
       margin-top: 20px; }
 
@@ -1055,7 +1065,9 @@ a {
   padding: 30px 0; }
   .mainContent .mainContent__item {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 366px; }
     @media screen and (max-width: 767px) {
       .mainContent .mainContent__item {
         min-height: 360px; } }
@@ -1073,6 +1085,10 @@ a {
       display: block; }
     .mainContent .mainContent__item > a {
       letter-spacing: 1px; }
+    .mainContent .mainContent__item .dontate-btn {
+      position: absolute;
+      left: 15px;
+      bottom: 0; }
 
 #footer {
   background: #a50031; }
@@ -1100,5 +1116,9 @@ a {
     @media screen and (max-width: 1005px) {
       #footer img {
         float: none; } }
+
+.bottomFooter {
+  background: #393a3a;
+  height: 80px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -64,6 +64,7 @@ body {
 h1 {
 	@extend .amatic;
 	font-size: 40px;
+	margin-bottom: 8px;
 }
 
 h2,
@@ -91,7 +92,7 @@ h6 {
 
 
 .container {
-	max-width: 1150px;
+	max-width: 1030px;
 	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -145,7 +146,7 @@ a {
 	@extend .clearfix;
 	background: url('images/bg-hero.jpg');
 	background-size: cover;
-	background-position: bottom center;
+	background-position: center;
 
 	@media screen and ( max-width: 770px ) {
 		background-position: 60% center;
@@ -219,6 +220,7 @@ a {
 			color: white;
 			margin: 36px;
 			display: block;
+			line-height: 1.5;
 
 			@media screen and ( max-width: 550px ) {
 				font-size: 25px;
@@ -243,7 +245,7 @@ a {
 					display: block;
 					background: #dcdad3;
 					color: $secondary;
-					padding: 15px 20px;
+					padding: 15px 20px 12px;
 					text-transform: uppercase;
 					border-radius: 10px;
 					font-size: 22px;
@@ -260,6 +262,21 @@ a {
 				}
 			}
 		}
+
+		.giveButton {
+			display: inline-block;
+			background: $primary;
+			color: white;
+			padding: 12px 25px 9px;
+			text-transform: uppercase;
+			border-radius: 10px;
+			font-size: 22px;
+			margin-left: 36px;
+
+			&:hover {
+				background: $secondary;
+			}
+		}
 	}
 	.playButton {
 		position: absolute;
@@ -272,9 +289,6 @@ a {
 		}		
 
 		.triangle {
-			border-left: 80px solid transparent;
-			border-right: 80px solid transparent;
-			border-bottom: 40px solid $primary;
 			display: block;
     		margin-top: 20px;
 		}
@@ -302,6 +316,8 @@ a {
 		@extend .col-sm-4;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		position: relative;
+		min-height: 366px;
 
 
 		@media screen and ( max-width: 767px ) {
@@ -330,6 +346,12 @@ a {
 
 		> a {
 			letter-spacing: 1px;
+		}
+
+		.dontate-btn {
+			position: absolute;
+			left: 15px;
+			bottom: 0;
 		}
 	}
 }
@@ -379,4 +401,9 @@ a {
 	    	float: none;
 	    }
 	}
+}
+
+.bottomFooter {
+	background: #393a3a;
+	height: 80px;
 }

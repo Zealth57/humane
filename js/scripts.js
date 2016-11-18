@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.mainContent a, .playButton').click(function() {
+	$('.mainContent a:not(.dontate-btn), .playButton').click(function() {
 		$.fancybox({
 				'padding'		: 0,
 				'autoScale'		: false,
