@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script src="fancybox/jquery.fancybox.js"></script>
+	<script src="js/scripts.js"></script>
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/old_styles.css">
 	<link rel="stylesheet" href="style.css">
@@ -25,14 +26,14 @@
 
 						<div class="search_wrap_inner_left">
 							
-<div class="search_bar_wrap">
-	<form method="get" action="http://humanesocietytampa.org">
-		<p>
-			<input name="s" placeholder="enter keywords" value="" type="text">
-			<button type="submit" class="cmsms_theme_icon_search"></button>
-		</p>
-	</form>
-</div>
+						<div class="search_bar_wrap">
+							<form method="get" action="http://humanesocietytampa.org">
+								<p>
+									<input name="s" placeholder="enter keywords" value="" type="text">
+									<button type="submit" class="cmsms_theme_icon_search"></button>
+								</p>
+							</form>
+						</div>
 
 						</div>
 						<div class="search_wrap_inner_right">
@@ -90,19 +91,4 @@
 
 	</div>
 
-	<div class="header_bot" data-height="46">
-		<div class="header_bot_outer">
-			<div class="header_bot_inner">
-				<div class="resp_nav_wrap">
-					<div class="resp_nav_wrap_inner">
-						<div class="resp_nav_content">
-							<a class="responsive_nav cmsms_theme_icon_resp_nav" href="javascript:void(0);"></a>
-						</div>
-					</div>
-				</div>
-				
-				
-			</div>
-		</div>
-	</div>
 </header>

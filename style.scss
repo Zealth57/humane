@@ -104,6 +104,12 @@ a {
 // Header
 #header {
 	background: rgba(0,0,0,.77);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
 
 	.social_wrap {
 		a {
@@ -114,6 +120,24 @@ a {
 			color: white;
 		}
 	}
+
+	.header_mid_inner {
+		width: 100%;
+		max-width: 1150px;
+		padding: 0 15px;
+	}
+
+	.header_mid_inner .search_wrap .search_but {
+		color: $secondary;
+	}
+
+	.search_bar_wrap input[type=text] {
+		padding-top: 14px;
+	}
+
+	.header-give-button {
+		margin-top: -4px;
+	}
 }
 
 // Hero
@@ -121,18 +145,57 @@ a {
 	@extend .clearfix;
 	background: url('images/bg-hero.jpg');
 	background-size: cover;
-	background-position: top center;
+	background-position: bottom center;
+
+	@media screen and ( max-width: 770px ) {
+		background-position: 60% center;
+	}
+
+	// @media screen and ( max-width: 700px ) {
+	// 	background-position: 50% center;
+	// }
+
+	// @media screen and ( max-width: 515px ) {
+	// 	background-position: 27% center;
+	// }
+
+	.container {
+		@extend .clearfix;
+		position: relative;
+
+		@media screen and ( max-width: 770px ) {
+			padding-bottom: 150px;
+		}
+	}
 
 	.hero__inner {
 		float: right;
 		max-width: 600px;
-		padding: 90px 0;
+		padding: 200px 0 90px;
+
+		@media screen and ( max-width: 770px ) {
+			max-width: 100%;
+			width: 100%;
+			float: none;
+		}
 
 		h2 {
 			@extend .din--black;
 			font-weight: bold;
 			font-size: 74px;
 			color: white;
+
+			@media screen and ( max-width: 600px ) {
+				font-size: 64px;
+			}
+
+			@media screen and ( max-width: 515px ) {
+				font-size: 54px;
+			}
+
+			@media screen and ( max-width: 440px ) {
+				font-size: 44px;
+			}
 
 			span {
 				color: $secondary;
@@ -156,12 +219,26 @@ a {
 			color: white;
 			margin: 36px;
 			display: block;
+
+			@media screen and ( max-width: 550px ) {
+				font-size: 25px;
+			}
 		}
 
 		ul {
 			padding-left: 36px;
+
+			@media screen and ( max-width: 600px ) {
+				padding-left: 0;
+			}
+
 			li {
 				display: inline-block;
+
+				@media screen and ( max-width: 600px ) {
+					display: block;
+				}
+
 				a {
 					display: block;
 					background: #dcdad3;
@@ -170,8 +247,36 @@ a {
 					text-transform: uppercase;
 					border-radius: 10px;
 					font-size: 22px;
+
+					&:hover {
+						color: white;
+						background: $secondary;
+					}
+
+					@media screen and ( max-width: 600px ) {
+						text-align: center;
+						width: 100%;
+					}
 				}
 			}
+		}
+	}
+	.playButton {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		@media screen and ( max-width: 770px ) {
+			left: 50%;
+		    transform: translateX(-50%);
+		}		
+
+		.triangle {
+			border-left: 80px solid transparent;
+			border-right: 80px solid transparent;
+			border-bottom: 40px solid $primary;
+			display: block;
+    		margin-top: 20px;
 		}
 	}
 }
@@ -193,10 +298,20 @@ a {
 	padding: 30px 0;
 
 	.mainContent__item {
+		@extend .col-xs-6;
 		@extend .col-sm-4;
 		padding-top: 30px;
 		padding-bottom: 30px;
 
+
+		@media screen and ( max-width: 767px ) {
+			min-height: 360px;
+		}
+
+		@media screen and ( max-width: 500px ) {
+			width: 100%;
+		}
+		
 		a, h2 {
 			@extend .din--black;
 			text-transform: uppercase;
@@ -222,4 +337,46 @@ a {
 // Footer
 #footer {
 	background: $primary;
+
+	p {
+		@extend .amatic;
+		color: white;
+		font-size: 40px;
+	}
+
+	.socialItems {
+		float: left;
+		padding: 80px 0;
+
+		@media screen and ( max-width: 1005px ) {
+			padding: 10px 0 20px;
+			float: none;
+		}
+	}
+
+	div {
+		@media screen and ( max-width: 1005px ) {
+			text-align: center;
+		}
+	}
+
+	ul {
+		li {
+			display: inline-block;
+
+			img {
+				max-width: 40px;
+			}
+		}
+	}
+
+	img {
+		max-width: 760px;
+	    width: 100%;
+	    float: right;
+
+	    @media screen and ( max-width: 1005px ) {
+	    	float: none;
+	    }
+	}
 }
