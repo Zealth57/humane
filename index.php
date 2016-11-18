@@ -7,12 +7,12 @@
 			<h2 class="hero__quote"><span class="open-quote">“</span>Help me help my fur-friends.<span class="close-quote">“</span></h2>
 			<span class="hero__motto">-GP, the self-appointed liason between pets & people.</span>
 			<ul class="hero__dontateButtons">
-				<li><a href="#" class="btn btn-primary">$30</a></li>
-				<li><a href="#" class="btn btn-primary">$50</a></li>
-				<li><a href="#" class="btn btn-primary">$100</a></li>
-				<li><a href="#" class="btn btn-primary">$500</a></li>
-				<li><a href="#" class="btn btn-primary">$1000</a></li>
-				<li><a href="#" class="btn btn-primary">OTHER</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">$30</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">$50</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">$100</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">$500</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">$1000</a></li>
+				<li><a href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=100" class="btn btn-primary">OTHER</a></li>
 			</ul>
 		</div>
 	</div>

@@ -3,6 +3,10 @@
 <head>
 	<title>Humane Society Tampa - Donate</title>
 	<link rel="stylesheet" href="css/reset.css">
+
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="fancybox/jquery.fancybox.js"></script>
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/old_styles.css">
 	<link rel="stylesheet" href="style.css">
