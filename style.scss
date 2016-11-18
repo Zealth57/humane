@@ -1,0 +1,225 @@
+// Grid
+@import 'css/grid.scss';
+
+// Fonts
+@font-face {
+	font-family: 'Din';
+	src: url('css/fonts/din-regular-webfont.eot');
+	src:url('css/fonts/din-regular-webfont.woff') format('woff'), url('css/fonts/din-regular-webfont.ttf') format('truetype'), url('css/fonts/din-regular-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Din-Black';
+	src: url('css/fonts/din-black-webfont.eot');
+	src:url('css/fonts/din-black-webfont.woff') format('woff'), url('css/fonts/din-black-webfont.ttf') format('truetype'), url('css/fonts/din-black-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Amatic';
+	src: url('css/fonts/amatic-regular.eot');
+	src:url('css/fonts/amatic-regular.woff') format('woff'), url('css/fonts/amatic-regular.ttf') format('truetype'), url('css/fonts/amatic-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Amatic-Bold';
+	src: url('css/fonts/amatic-bold.eot');
+	src:url('css/fonts/amatic-bold.woff') format('woff'), url('css/fonts/amatic-bold.ttf') format('truetype'), url('css/fonts/amatic-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.din {
+	font-family: 'Din';
+}
+
+.din--black {
+	font-family: 'Din-Black';
+}
+
+.amatic {
+	font-family: 'Amatic';
+}
+
+.amatic--bold {
+	font-family: 'Amatic-Bold';
+}
+
+// Variables
+$primary: #a50031;
+$secondary: #009fd0;
+$tertiary: #fffdee;
+
+
+// Globals
+body {
+	@extend .din;
+}
+
+h1 {
+	@extend .amatic;
+	font-size: 40px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend .din--black;
+	font-weight: normal;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+.container {
+	max-width: 1150px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Header
+#header {
+	background: rgba(0,0,0,.77);
+
+	.social_wrap {
+		a {
+			color: $secondary;
+		}
+
+		button {
+			color: white;
+		}
+	}
+}
+
+// Hero
+.hero {
+	@extend .clearfix;
+	background: url('images/bg-hero.jpg');
+	background-size: cover;
+	background-position: top center;
+
+	.hero__inner {
+		float: right;
+		max-width: 600px;
+		padding: 90px 0;
+
+		h2 {
+			@extend .din--black;
+			font-weight: bold;
+			font-size: 74px;
+			color: white;
+
+			span {
+				color: $secondary;
+				display: block;
+
+				&.open-quote {
+					float: left;
+					padding-bottom: 40px;
+				}
+
+				&.close-quote {
+					float: right;
+				}
+			}
+		}
+
+		.hero__motto {
+			@extend .din;
+			font-weight: bold;
+			font-size: 31px;
+			color: white;
+			margin: 36px;
+			display: block;
+		}
+
+		ul {
+			padding-left: 36px;
+			li {
+				display: inline-block;
+				a {
+					display: block;
+					background: #dcdad3;
+					color: $secondary;
+					padding: 15px 20px;
+					text-transform: uppercase;
+					border-radius: 10px;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+// Intro
+.intro {
+	background: $primary;
+	color: white;
+	padding: 30px 0;
+
+	p {
+		line-height: 2;
+	}
+}
+
+// Main Content
+.mainContent {
+	background: $tertiary;
+	padding: 30px 0;
+
+	.mainContent__item {
+		@extend .col-sm-4;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		a, h2 {
+			@extend .din--black;
+			text-transform: uppercase;
+			color: $primary;
+			font-size: 20px;
+		}
+
+		h2 {
+			a {
+				color: black;
+				font-size: 16px;
+				margin-top: 10px;
+				display: block;
+			}
+		}
+
+		> a {
+			letter-spacing: 1px;
+		}
+	}
+}
+
+// Footer
+#footer {
+	background: $primary;
+}
