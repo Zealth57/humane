@@ -986,16 +986,17 @@ a {
           padding: 40px; } }
       @media screen and (max-width: 673px) {
         .hero .hero__inner h2 {
-          font-size: 67px; } }
-      @media screen and (max-width: 600px) {
+          font-size: 60px;
+          margin-bottom: 0; } }
+      @media screen and (max-width: 591px) {
         .hero .hero__inner h2 {
-          font-size: 64px; } }
-      @media screen and (max-width: 515px) {
+          font-size: 9vw; } }
+      @media screen and (max-width: 500px) {
         .hero .hero__inner h2 {
-          font-size: 54px; } }
-      @media screen and (max-width: 440px) {
+          padding: 1.6rem; } }
+      @media screen and (max-width: 413px) {
         .hero .hero__inner h2 {
-          font-size: 44px; } }
+          font-size: 8vw; } }
       .hero .hero__inner h2 div {
         float: left;
         padding: 0 20px; }
@@ -1004,6 +1005,14 @@ a {
         display: block;
         font-size: 110px;
         position: absolute; }
+        @media screen and (max-width: 600px) {
+          .hero .hero__inner h2 span {
+            font-size: 90px; } }
+        @media screen and (max-width: 500px) {
+          .hero .hero__inner h2 span {
+            font-size: 75px;
+            padding: 1.6rem;
+            margin-bottom: 0; } }
         .hero .hero__inner h2 span.open-quote {
           padding-bottom: 40px;
           left: -50px;
@@ -1011,12 +1020,18 @@ a {
           @media screen and (max-width: 770px) {
             .hero .hero__inner h2 span.open-quote {
               left: 0; } }
+          @media screen and (max-width: 500px) {
+            .hero .hero__inner h2 span.open-quote {
+              top: -30px; } }
         .hero .hero__inner h2 span.close-quote {
           right: -20px;
           bottom: 0; }
           @media screen and (max-width: 770px) {
             .hero .hero__inner h2 span.close-quote {
-              right: 0; } }
+              right: -5px; } }
+          @media screen and (max-width: 550px) {
+            .hero .hero__inner h2 span.close-quote {
+              bottom: -10px; } }
     .hero .hero__inner .hero__motto {
       font-weight: bold;
       font-size: 31px;
@@ -1024,9 +1039,13 @@ a {
       margin: 36px;
       display: block;
       line-height: 1.5; }
+      @media screen and (max-width: 770px) {
+        .hero .hero__inner .hero__motto {
+          padding: 0 1rem 1rem;
+          margin-top: 0; } }
       @media screen and (max-width: 550px) {
         .hero .hero__inner .hero__motto {
-          font-size: 25px; } }
+          font-size: 18px; } }
     .hero .hero__inner ul {
       padding-left: 36px; }
       @media screen and (max-width: 600px) {
