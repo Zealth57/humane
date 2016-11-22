@@ -181,10 +181,20 @@ a {
 		}
 
 		h2 {
+			@extend .clearfix;
 			@extend .din--black;
 			font-weight: bold;
 			font-size: 74px;
 			color: white;
+			position: relative;
+
+			@media screen and ( max-width: 770px ) {
+				padding: 40px;
+			}
+
+			@media screen and ( max-width: 673px ) {
+				font-size: 67px;
+			}
 
 			@media screen and ( max-width: 600px ) {
 				font-size: 64px;
@@ -198,17 +208,34 @@ a {
 				font-size: 44px;
 			}
 
+			div {
+				float: left;
+				padding: 0 20px;
+			}
+
 			span {
 				color: $secondary;
 				display: block;
+				font-size: 110px;
+				position: absolute;
 
 				&.open-quote {
-					float: left;
 					padding-bottom: 40px;
+					left: -50px;
+					top: 0;
+
+					@media screen and ( max-width: 770px ) {
+						left: 0;
+					}
 				}
 
 				&.close-quote {
-					float: right;
+					right: -20px;
+					bottom: 0;
+
+					@media screen and ( max-width: 770px ) {
+						right: 0;
+					}
 				}
 			}
 		}
@@ -273,6 +300,12 @@ a {
 			font-size: 22px;
 			margin-left: 36px;
 
+			@media screen and ( max-width: 770px ) {
+				width: 100%;
+			    margin: 0;
+			    text-align: center;
+			}	
+
 			&:hover {
 				background: $secondary;
 			}
@@ -286,6 +319,11 @@ a {
 		@media screen and ( max-width: 770px ) {
 			left: 50%;
 		    transform: translateX(-50%);
+		    text-align: center;
+
+		    img {
+		    	max-width: 100px;
+		    }
 		}		
 
 		.triangle {
@@ -354,7 +392,7 @@ a {
 		.dontate-btn {
 			position: absolute;
 			left: 15px;
-			bottom: 0;
+			bottom: 30px;
 		}
 	}
 }

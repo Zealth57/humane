@@ -812,13 +812,15 @@
 
   .col-lg-offset-0 {
     margin-left: 0%; } }
-.clearfix, .hero, .hero .container,
+.clearfix, .hero, .hero .container, .hero .hero__inner h2,
 .clearfix:before,
 .hero:before,
 .hero .container:before,
+.hero .hero__inner h2:before,
 .clearfix:after,
 .hero:after,
 .hero .container:after,
+.hero .hero__inner h2:after,
 .container:before,
 .container:after,
 .container-fluid:before,
@@ -828,7 +830,7 @@
   content: " ";
   display: table; }
 
-.clearfix:after, .hero:after, .hero .container:after,
+.clearfix:after, .hero:after, .hero .container:after, .hero .hero__inner h2:after,
 .container:after,
 .container-fluid:after,
 .row:after {
@@ -903,7 +905,7 @@ h5,
 h6 {
   font-weight: normal; }
 
-.clearfix:after, .hero:after, .hero .container:after {
+.clearfix:after, .hero:after, .hero .container:after, .hero .hero__inner h2:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -911,14 +913,14 @@ h6 {
   clear: both;
   height: 0; }
 
-.clearfix, .hero, .hero .container {
+.clearfix, .hero, .hero .container, .hero .hero__inner h2 {
   display: inline-block; }
 
 /* start commented backslash hack \*/
-* html .clearfix, * html .hero, * html .hero .container, .hero * html .container {
+* html .clearfix, * html .hero, * html .hero .container, .hero * html .container, * html .hero .hero__inner h2, .hero .hero__inner * html h2 {
   height: 1%; }
 
-.clearfix, .hero, .hero .container {
+.clearfix, .hero, .hero .container, .hero .hero__inner h2 {
   display: block; }
 
 /* close commented backslash hack */
@@ -977,7 +979,14 @@ a {
     .hero .hero__inner h2 {
       font-weight: bold;
       font-size: 74px;
-      color: white; }
+      color: white;
+      position: relative; }
+      @media screen and (max-width: 770px) {
+        .hero .hero__inner h2 {
+          padding: 40px; } }
+      @media screen and (max-width: 673px) {
+        .hero .hero__inner h2 {
+          font-size: 67px; } }
       @media screen and (max-width: 600px) {
         .hero .hero__inner h2 {
           font-size: 64px; } }
@@ -987,14 +996,27 @@ a {
       @media screen and (max-width: 440px) {
         .hero .hero__inner h2 {
           font-size: 44px; } }
+      .hero .hero__inner h2 div {
+        float: left;
+        padding: 0 20px; }
       .hero .hero__inner h2 span {
         color: #009fd0;
-        display: block; }
+        display: block;
+        font-size: 110px;
+        position: absolute; }
         .hero .hero__inner h2 span.open-quote {
-          float: left;
-          padding-bottom: 40px; }
+          padding-bottom: 40px;
+          left: -50px;
+          top: 0; }
+          @media screen and (max-width: 770px) {
+            .hero .hero__inner h2 span.open-quote {
+              left: 0; } }
         .hero .hero__inner h2 span.close-quote {
-          float: right; }
+          right: -20px;
+          bottom: 0; }
+          @media screen and (max-width: 770px) {
+            .hero .hero__inner h2 span.close-quote {
+              right: 0; } }
     .hero .hero__inner .hero__motto {
       font-weight: bold;
       font-size: 31px;
@@ -1039,6 +1061,11 @@ a {
       border-radius: 10px;
       font-size: 22px;
       margin-left: 36px; }
+      @media screen and (max-width: 770px) {
+        .hero .hero__inner .giveButton {
+          width: 100%;
+          margin: 0;
+          text-align: center; } }
       .hero .hero__inner .giveButton:hover {
         background: #009fd0; }
   .hero .playButton {
@@ -1048,7 +1075,10 @@ a {
     @media screen and (max-width: 770px) {
       .hero .playButton {
         left: 50%;
-        transform: translateX(-50%); } }
+        transform: translateX(-50%);
+        text-align: center; }
+        .hero .playButton img {
+          max-width: 100px; } }
     .hero .playButton .triangle {
       display: block;
       margin-top: 20px;
@@ -1091,7 +1121,7 @@ a {
     .mainContent .mainContent__item .dontate-btn {
       position: absolute;
       left: 15px;
-      bottom: 0; }
+      bottom: 30px; }
 
 #footer {
   background: #a50031; }
