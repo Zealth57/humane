@@ -4,7 +4,7 @@
 <section class="hero">
 	<div class="container">
 		<div class="hero__inner">
-			<h2 class="hero__quote"><span class="open-quote">&ldquo;</span><div>Help me help my fur-friends.</div><span class="close-quote">&rdquo;</span></h2>
+			<h2 class="hero__quote"><div><img src="images/quote.png" alt="Help me help my fur-friends."></div></h2>
 			<span class="hero__motto">-GP, the self-appointed liaison between pets & people.</span>
 			<ul class="hero__dontateButtons">
 				<li><a target="_blank" href="https://interland3.donorperfect.net/weblink/FormSingleNM.aspx?name=hsot&id=8&formid=85&amount=30" class="btn btn-primary">$30</a></li>
